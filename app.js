@@ -5,22 +5,27 @@
 //accuracy=chance (0-1) that the ship will hit its target
 
 
-const spaceship{
-  name: "USS HelloWorld"
-  hull: "20"
-  firepower: "5"
-  accuracy: "".7"
-}
+// const spaceship{
+//   name: "USS HelloWorld"
+//   hull: "20"
+//   firepower: "5"
+//   accuracy: "".7"
+// }
 
-const alien{
-  constructor(
-  this.hull = hull
-  this.firepower = firepower
-  this.accuracy = accuracy
-  )
-}
+// const alien{
+//   constructor(
+//   this.hull = hull
+//   this.firepower = firepower
+//   this.accuracy = accuracy
+//   )
+// }
 
-//example of use of accuracy to determine a hit:
-if(Math.random() < alien[0].accuracy) { 
-  console.log('You have been hit!');
-}
+// //example of use of accuracy to determine a hit:
+// if(Math.random() < alien[0].accuracy) { 
+//   console.log('You have been hit!');
+// }
+
+
+// git add .
+// git commit -m    MESSAGETKINQUOTES
+// git push origin main
