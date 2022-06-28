@@ -1,14 +1,18 @@
-const SIDES = ["USS", "Alien"]
+const NAME = ["Alien" + "[i]"]
 const HULL = ['15'] //TK USS vs Alien range?
 const FIREPOWER = ['5'] //TK range?
 const ACCURACY = ['.7'] //TK range?
-// const hullUss = ["15"]
-// const firepowerUss = ['5']
-// const accuracyUss = ['.7']
+
+const HelloWorld() {
+  namehw = ["USS HelloWorld"]
+  hullhw = ["15"]
+  firepowerhw = ['5']
+  accuracyhw = ['.7']
+}
 
 //flexible enough to handle any grouping/bunch/pile of ships
-export default class Fleet { 
-  constructor(ships = newBattle()) {
+export default class AlienFleet { 
+  constructor(Alienship = newBattle()) {
     this.ships = ships
   }
 
@@ -34,9 +38,9 @@ export default class Fleet {
 //   }
 // }
 
-class Ship{
-  constructor(side, hull, firepower, accuracy) {
-    this.side = side
+class Alienship{
+  constructor(name, hull, firepower, accuracy) {
+    this.name = name
     this.hull = hull
     this.firepower = firepower
     this.accuracy = accuracy
@@ -44,8 +48,8 @@ class Ship{
 }
 
 function newBattle() {
-  return SIDES.flatMap(side => { 
-        return new Ship(side, HULL, FIREPOWER, ACCURACY)
+  return NAME.flatMap(name => { 
+        return new Alienship(NAME, HULL, FIREPOWER, ACCURACY)
       })
         }
 
