@@ -11,10 +11,26 @@ export default class Fleet { //flexible enough to handle any grouping/bunch/pile
     this.ships = ships
   }
 
-  shuffle(){
-    this.cards.sort((a, b) => Math.random() - .5)
+
+get numberOfShips () {
+  return this.ships.length
+}
+
+shuffleAlienFleet() {
+  for (let i = this.numberOfShips - 1; i > 0; i--){
+    const newIndex = Math.floor(Math.random() * (i + 1)
+    const oldValue = this.ships[newIndex]
+    this.ships[newIndex] = this.ships[i]
+    this.ships[i] = oldValue
+
   }
 }
+
+//not 100% accurate in creating a real sort; can't include Math.random insie of .sort
+//   shuffle(){ 
+//     this.cards.sort((a, b) => Math.random() - .5)
+//   }
+// }
 
 class Ship {
   constructor(side, hull, firepower, accuracy) {
@@ -28,10 +44,5 @@ class Ship {
 function newBattle() {
   return SIDES.flatMap(side => { 
         return new Ship(side, HULL, FIREPOWER, ACCURACY)
-      }
-        })
       })
-      
-    })
-//   })
-}
+        }
