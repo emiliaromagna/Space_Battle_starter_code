@@ -1,24 +1,28 @@
-// hull=hitpoints. If hull <= 0, spaceship is destroyed.
+const NAME = ["name"]
+const HULL = []
+const FIREPOWER
+const ACCURACY
 
-//firepower=amount of damage done to hull with a hit
 
-//accuracy=chance (0-1) that the ship will hit its target
+class Ship {
+  constructor(ships) {
+    this.ships = ships
+  }
+}
 
+class Player {
+  constructor(name, hull, firepower, accuracy) {
+    this.name = name
+    this.hull = hull
+    this.firepower = firepower
+    this.accuracy = accuracy
+  }
+}
 
-// const spaceship{
-//   name: "USS HelloWorld"
-//   hull: "20"
-//   firepower: "5"
-//   accuracy: "".7"
-// }
+function fleet() {
+  return 
+}
 
-// const alien{
-//   constructor(
-//   this.hull = hull
-//   this.firepower = firepower
-//   this.accuracy = accuracy
-//   )
-// }
 
 // //example of use of accuracy to determine a hit:
 // if(Math.random() < alien[0].accuracy) { 
