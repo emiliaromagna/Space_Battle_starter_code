@@ -1,7 +1,13 @@
 import Fleet from './fleet.js'
 
 const fleet = new Fleet()
+fleet.shuffleAlienFleet() 
 console.log(fleet.ships)
+
+startGame()
+function startGame() {
+  
+}
 
 
 // //example of use of accuracy to determine a hit:

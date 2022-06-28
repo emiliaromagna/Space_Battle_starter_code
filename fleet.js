@@ -6,25 +6,27 @@ const ACCURACY = ['.7'] //TK range?
 // const firepowerUss = ['5']
 // const accuracyUss = ['.7']
 
-export default class Fleet { //flexible enough to handle any grouping/bunch/pile of ships
+//flexible enough to handle any grouping/bunch/pile of ships
+export default class Fleet { 
   constructor(ships = newBattle()) {
     this.ships = ships
   }
 
+  get numberOfShips() {
+    return this.ships.length;
+  }
 
-get numberOfShips () {
-  return this.ships.length
-}
-
-shuffleAlienFleet() {
-  for (let i = this.numberOfShips - 1; i > 0; i--){
-    const newIndex = Math.floor(Math.random() * (i + 1)
-    const oldValue = this.ships[newIndex]
-    this.ships[newIndex] = this.ships[i]
-    this.ships[i] = oldValue
-
+  shuffleAlienFleet() {
+    for (let i = this.numberOfShips - 1; i > 0; i--){
+      const newIndex = Math.floor(Math.random() * (i + 1))
+      const oldValue = this.ships[newIndex]
+      this.ships[newIndex] = this.ships[i]
+      this.ships[i] = oldValue
+    }
   }
 }
+
+
 
 //not 100% accurate in creating a real sort; can't include Math.random insie of .sort
 //   shuffle(){ 
@@ -32,7 +34,7 @@ shuffleAlienFleet() {
 //   }
 // }
 
-class Ship {
+class Ship{
   constructor(side, hull, firepower, accuracy) {
     this.side = side
     this.hull = hull
@@ -46,3 +48,11 @@ function newBattle() {
         return new Ship(side, HULL, FIREPOWER, ACCURACY)
       })
         }
+
+        // //example of use of accuracy to determine a hit:
+// if(Math.random() < alien[0].accuracy) { 
+//   console.log('You have been hit!');
+
+// // git add .
+// git commit -m    MESSAGETKINQUOTES
+// git push origin main
