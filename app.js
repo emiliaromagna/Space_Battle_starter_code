@@ -1,6 +1,8 @@
 import Fleet from './fleet.js'
 
-const deck = new Fleet()
+const fleet = new Fleet()
+console.log(fleet.ships)
+
 
 // //example of use of accuracy to determine a hit:
 // if(Math.random() < alien[0].accuracy) { 

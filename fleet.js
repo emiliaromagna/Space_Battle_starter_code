@@ -10,6 +10,10 @@ export default class Fleet { //flexible enough to handle any grouping/bunch/pile
   constructor(ships = newBattle()) {
     this.ships = ships
   }
+
+  shuffle(){
+    this.cards.sort((a, b) => Math.random() - .5)
+  }
 }
 
 class Ship {
@@ -22,14 +26,12 @@ class Ship {
 }
 
 function newBattle() {
-  return SIDES.flatMap(side => {
-    return HULL.map(hull => {
-      return FIREPOWER.map(firepower => {
-        return ACCURACY.map(accuracy => {
-          return new Ship(side, hull, firepower, accuracy)
+  return SIDES.flatMap(side => { 
+        return new Ship(side, HULL, FIREPOWER, ACCURACY)
+      }
         })
       })
       
     })
-  })
+//   })
 }
