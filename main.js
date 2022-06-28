@@ -5,16 +5,27 @@ let alienHull = document.querySelector('#alienHull');
 let alienFirepower = document.querySelector('#alienFirepower');
 let alienAccuracy = document.querySelector('#alienAccuracy');
 
-const helloWorld(name, hull, firepower, accuracy) {
+const helloWorld(name, hull, firepower, accuracy) => {
   name = ["USS HelloWorld"],
   hull = ["20"],
   firepower = ['5'],
   accuracy = ['.7'],
 }
 
+class Alienship{
+  constructor(name, hull, firepower, accuracy) {
+    this.name = name
+    this.hull = hull
+    this.firepower = firepower
+    this.accuracy = accuracy
+  }
+}
+
+// console.log(helloWorld)
+
 const alienFleet = {
   name: ["Alien #1", "Alien #2", "Alien #3", "Alien #4", "Alien #5", "Alien #6"]
-  hull: [3, 4, 5, 6],
+  hull: ["3", "4", "5", "6"],
   firePower: [2, 3, 4],
   accuracy: [.6, .7, .8]
 }
@@ -28,8 +39,8 @@ class alienFleet {
   }
 }
 
-class HelloWorld() {
-  constructor(name, hull, firepower, accuracy) {
+class HelloWorld() => {
+  constructor(name, hull, firepower, accuracy), {
     this.hull = hull;
     this.firepower = firepower;
     this.accuracty = accuracy;
