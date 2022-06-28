@@ -1,5 +1,6 @@
-import 
+import Fleet from './fleet.js'
 
+const deck = new Fleet()
 
 // //example of use of accuracy to determine a hit:
 // if(Math.random() < alien[0].accuracy) { 
