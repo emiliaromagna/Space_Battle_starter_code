@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Battle</title>
+    <script src="finalapp.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="container">
+
+    
+    <div id="topRow">
+      <h1>Welcome to the Battle For Your Life<br>
+      You are about to face down the aliens ...</h1>
+    </div>
+
+    <div id="buttonRow">
+      <button onclick="startGame()" class="btn">BEGIN BATTLE!</button>
+    </div>
+
+    <div id="buttonRow2">
+      <button class="btn" onclick="attack">ATTACK</button>
+      <button class="btn" onclick="retreat">RETREAT</button>
+    </div>
+
+    <div class="nameRow">
+      <div id="hero" class="opponents" class="mainCharacterView left" class:"nameBox">
+      USS HelloWorld
+      </div>
+      <div id="alien" class="opponents">
+        <div class="mainCharacterView right"></div>
+        <div>Alien Spaceships</div>
+      </div>
+    </div>
+    
+    <div id="imageRow">
+        <div id="hero" class="opponents">
+          <img src ="images/space_hero.gif">
+        </div>
+        <div id="alien" class="opponents">
+          <img src ="images/enemy.gif">
+        </div>
+     </div>
+
+     <div id="statRow">
+      <div class="mainCharacterView left">
+        <div class="playerStats">
+
+        Hull : 15 <br>
+        FirePower : 5 <br>
+        Accuracy : .7 <br>
+
+        </div>
+        <div class="mainCharacterView right">
+              <div class="enemyStats">
+                  Hull : 6 <br>
+                  FirePower : 3 <br>
+                  Accuracy : .6 <br>
+
+              </div>
+      
+       </div>
+    </div>
+    </div>
+</body>
+</html>

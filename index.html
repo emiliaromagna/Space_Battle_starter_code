@@ -5,15 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Battle</title>
-    <script src="main.js" defer></script>
+    <script src="finalapp.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
+<!-- <header>
+    <div >
+        <h1>Welcome to the Battle For Your Life</h1>
+        <p>You are about to face down to aliens ...</p>
+          <button onclick="startGame()" class="btn">BEGIN BATTLE!</button>
+          <button class="btn" onclick="attack">ATTACK</button>
+          <button class="btn">RETREAT</button>
+         </div>
+     </div>
+</header> -->
 <body>
-    <div class="bodyContainer">
-
+    
+    <div id="container">
+        <div id="topRow">
+          <div id="megastats" class="stats"></div>
+          <span class="healthLabel">HEALTH</span><br>
+          <div id="megaManHP"></div>
+        </div>
+            <h1>Welcome to the Battle For Your Life</h1>
+            <p>You are about to face down to aliens ...</p>
+              <button onclick="startGame()" class="btn">BEGIN BATTLE!</button>
+              <button class="btn" onclick="attack">ATTACK</button>
+              <button class="btn">RETREAT</button>
+            </div></span>
         <div class="mainCharacterView left" >
                 <div class="nameBox">USS HelloWorld</div>
                 <div class="playerImage"></div>
@@ -26,20 +47,7 @@
                 </div>
 
         </div>
-        <div class="container">
-             <div id="text"></div>
-        <h1>Welcome to the Battle For Your Life</h1>
-        <p>You are about to face down to aliens ...</p>
-        <button onclick="beginBattle()" class="btn">BEGIN BATTLE!</button>
-          </div>
-            <div id="option-buttons" class="btn-grid">
-              <button class="btn" onclick="">ATTACK</button>
-              <button class="btn">RETREAT</button>
-              <!-- <button class="btn">Option 3</button>
-              <button class="btn">Option 4</button> -->
-            </div>
-        </div>
-       
+        
 
         <div class="mainCharacterView right">
            
@@ -49,6 +57,9 @@
                     Hull : 6 <br>
                     FirePower : 3 <br>
                     Accuracy : .6 <br>
-        </div>
+    </div>
+    
+    
 </body>
+              
 </html>
