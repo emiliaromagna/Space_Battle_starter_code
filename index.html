@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Battle</title>
@@ -11,55 +11,69 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
-<!-- <header>
-    <div >
-        <h1>Welcome to the Battle For Your Life</h1>
-        <p>You are about to face down to aliens ...</p>
-          <button onclick="startGame()" class="btn">BEGIN BATTLE!</button>
-          <button class="btn" onclick="attack">ATTACK</button>
-          <button class="btn">RETREAT</button>
-         </div>
-     </div>
-</header> -->
 <body>
-    
-    <div id="container">
-        <div id="topRow">
-          <div id="megastats" class="stats"></div>
-          <span class="healthLabel">HEALTH</span><br>
-          <div id="megaManHP"></div>
-        </div>
-            <h1>Welcome to the Battle For Your Life</h1>
-            <p>You are about to face down to aliens ...</p>
-              <button onclick="startGame()" class="btn">BEGIN BATTLE!</button>
-              <button class="btn" onclick="attack">ATTACK</button>
-              <button class="btn">RETREAT</button>
-            </div></span>
-        <div class="mainCharacterView left" >
-                <div class="nameBox">USS HelloWorld</div>
-                <div class="playerImage"></div>
-                <div class="playerStats">
-
-                Hull : 15 <br>
-                FirePower : 5 <br>
-                Accuracy : .7 <br>
-
-                </div>
-
-        </div>
-        
-
-        <div class="mainCharacterView right">
-           
-            <div class="nameBox">Alien Spaceships</div>
-            <div class="enemyImage"></div>
-                <div class="enemyStats">
-                    Hull : 6 <br>
-                    FirePower : 3 <br>
-                    Accuracy : .6 <br>
+  <div id="container">
+    <div id ="topWhiteSpace">   <h1><br>  <br>    <br></h1> 
     </div>
     
+    <div id="topRow">
+        <h1>War of the Worlds!</h1>
+        <h2>Welcome to the Battle For Your Life!</h2>
+        <p>Click to seek your fate.</p>
+       
+    </div>
+
+    <div id="buttonRow">
+        <button class="button" onclick="getElementById('topRow').innerHTML=(startGame(beginning))">I'm Game!</button>
+        <p id="beginning"></p>
+
+    </div>
+
+    <div id="buttonRow2">
+        <button class="button" onclick="getElementById('buttonRow2').innerHTML=(attack(step1))">Attack!</button>
+        <p id="beginning"></p>
+        <button class="button" class="btn2" onclick="getElementById('buttonRow2').innerHTML=(retreat(step1))">Retreat!</button>
+        <p id="step1"></p>
+    </div>
+
+    <div class="nameRow">
+      <div id="hero" class="opponents" class="mainCharacterView left">
+      USS HelloWorld
+      </div>
+      <div id="alien" class="opponents">
+        <div class="mainCharacterView right"></div>
+        <div>Alien Spaceships</div>
+      </div>
+    </div>
     
+    <div id="imageRow">
+        <div id="hero" class="opponents">
+          <img src ="images/space_hero.gif">
+        </div>
+        <div id="alien" class="opponents">
+          <img src ="images/enemy.gif">
+        </div>
+     </div>
+
+     <div id="statRow">
+      <div class="mainCharacterView left">
+        <div class="playerStats">
+
+        Hull : 15 <br>
+        FirePower : 5 <br>
+        Accuracy : .7 <br>
+
+        </div>
+        <div class="mainCharacterView right">
+              <div class="enemyStats">
+                  Hull : 6 <br>
+                  FirePower : 3 <br>
+                  Accuracy : .6 <br>
+
+              </div>
+      
+       </div>
+    </div>
+    </div>
 </body>
-              
 </html>

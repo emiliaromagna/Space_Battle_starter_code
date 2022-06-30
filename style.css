@@ -1,15 +1,36 @@
-#topRow {
+#topWhiteSpace {
   display: flex;
   flex-direction: row;
+  text-align: center;
   /* border: 1px solid; */
   /* border-color: blue; */
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
+  padding: 40px;
   font-family: 'Share Tech Mono', monospace;
-  font-size: 1.5em; 
   background-color: white;
   font-size: 5em;
+  font-color: black;
+}
+
+#topRow {
+  display: flexbox;
+  /* flex-direction: row; */
+  justify-content: center;
+  text-align: center;
+  /* border: 1px solid; */
+  /* border-color: blue; */
+  padding: 10px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 3em; 
+  background-color: white;
+  font-size: 5em;
+  font-color: black;
+}
+
+h1 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1em;
+  font-color: black; 
+  align-self: center;
 }
 
 #buttonRow {
@@ -18,9 +39,12 @@
   /* border: 1px solid; */
   /* border-color: yellow; */
   justify-content: center;
-  background-color: white;
+  background-color: red;
   font-family: 'Share Tech Mono', monospace;
   font-size: 5em; 
+  padding: 10px;
+  visibility: visible;
+  
 }
 
 #buttonRow2 {
@@ -29,9 +53,11 @@
   /* border: 1px solid; */
   /* border-color: yellow; */
   justify-content: center;
-  background-color: white;
+  background-color: red;
   font-family: 'Share Tech Mono', monospace;
-  font-size: 5em; 
+  font-size: 5em;
+  padding: 10px;
+  visibility: hidden;
 }
 
 .nameRow {
@@ -40,13 +66,11 @@
   /* border: 1px solid;
   border-color: red; */
   justify-content: space-evenly;
-  align-items: center;
   background-color: black;
   color: white;
   font-family: 'Share Tech Mono', monospace;
   font-size: 5em;
-  margin: 10px;
-  padding: 30px;
+  padding: 40px;
 }
 
 #imageRow {
@@ -64,11 +88,12 @@
   /* border: 1px solid;
   border-color: red; */
   justify-content: space-evenly;
-  align-items: center;
   background-color: black;
   font-family: 'Share Tech Mono', monospace;
   font-size: 3em; 
   color: white;
+  padding: 40px;
+  visibility: visible;
 }
 
 #hero {
@@ -103,9 +128,10 @@
   margin: 100px;
 }
 
-.opponents {
-  margin: 10px, 20px;
-}
+/* .opponents {
+  margin: 40px, 40px, 40px, 40px;
+  margin: 60px;
+} */
  
 /* .nameBox{
   border: 1px solid black;
@@ -121,22 +147,21 @@
 #container{
     font-family: 'Share Tech Mono', monospace;
     background-size: 100%;
-    background-color: black;
+    /* background-color: black; */
+    
   
 }
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 .mainCharacterView{
-width: 50%;
 display: flex;
 flex-direction: row;
-/* flex-direction: column; */
-/* justify-content: space-around; */
-align-items: center;
+justify-content: space-around;
+/* align-items: center; */
 }
 .left{
 
@@ -158,7 +183,8 @@ align-items: center;
 }
 .playerStats{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     border: 1px solidblack;
     width: 15vw;
@@ -183,9 +209,11 @@ align-items: center;
     box-shadow: 0px 0px 20px 10px white;
     
 }
+
 .enemyStats{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
     align-items: center;
     border: 1px solidblack;
     width: 15vw;
@@ -207,9 +235,9 @@ align-items: center;
   body {
     padding: 0;
     margin: 0;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     width: 100vw;
     height: 100vh;
     background-color: #333;
@@ -218,8 +246,8 @@ align-items: center;
   container {
     width: 500px;
     display: flex
-    align-items: center;
-    max-width: 80%;
+    /* align-items: center; */
+    max-width: 100%;
     font-family: 'Share Tech Mono', monospace;
     background-size: 100%;
     background-color: black;
@@ -240,13 +268,12 @@ align-items: center;
   
   .btn {
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     font-family: 'Share Tech Mono', monospace;
     background-size: 100%;
     background-color: black;
     color: white;
     outline: orangered;
-    display: flex;
     align-self: center;
     border: 10px solidblack;
     width: 15vw;
@@ -259,6 +286,16 @@ align-items: center;
     align-items: center;
     padding: 10px;
     margin: 10px;
+    /* visibility: hidden; */
+   
+  }
+  #btn1 {
+    visibility: hidden;
+   
+  }
+
+  #btn2 {
+    visibility: hidden;
    
   }
   
@@ -267,5 +304,7 @@ align-items: center;
     transition: cubic-bezier(0.23, 1, 0.320, 1);
     background-color: red;
     color: blue;
+    cursor: pointer;
   }
 
+  
